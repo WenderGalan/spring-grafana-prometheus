@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # Inclui todos os endpoints no actuator
+        include: "*"
+
+# Pode ser acessado na uri /actuator/info
+info:
+  app: Spring Boot Grafana with Prometheus
+  website: https://wendergalan.github.io/
+  github: https://github.com/WenderGalan/spring-grafana-prometheus
